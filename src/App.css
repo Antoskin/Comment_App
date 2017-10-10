@@ -10,3 +10,8 @@
 .commentWrapper div p {
   margin: 0;
   font-size: 13px; }
+
+.replysComponentBlock{margin-bottom: 70px;}
+.replysComponentBlock> li {
+  height: 100px;
+}
