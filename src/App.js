@@ -41,13 +41,10 @@ export default class App extends Component {
     }
   }
 
-  componentDidMount() {
-    //   $('.replyTarget').click( () => {
-    //     //console.log('!');
-    //     $(this).parent('.commentWrapper').find('.addReplyArea').fadeOut('slow');
-    // });
+  componentDidUpdate() {
     $('.replyTarget').click( function() {
-      $(this).parent('.commentWrapper').css({'background':'red'});
+      $('.addReplyArea').css({'display':'none'});
+      $(this).parents('.commentWrapper').find('.addReplyArea').slideDown('fast');
     })
   }
   handlerNEWComment(e) {
@@ -64,7 +61,7 @@ export default class App extends Component {
     this.state.comments.push(this.state.newComment);
     this.setState({comments: this.state.comments,
       newComment: { user: 'Kurt Thompson', photo: avatar, coment: '', time: 0, sw: true,
-      replyValue: [ { user: 'Antony Musk', photo: avatar, coment: 'example comment', time: 0 } ] }});
+      replyValue: [  ] }});
   }
 
   /*buttons: edit, del, reply*/
@@ -98,6 +95,7 @@ export default class App extends Component {
   addNewReplyButton(id) {
     this.state.comments[id].replyValue.push(this.state.newReply);
     this.setState({ replyValue: this.state.comments, newReply: { user: 'Antony Musk', photo: avatar, coment: '', time: 0 } });
+    $('.addReplyArea').css({'display':'none'});
   }
   render() {
     //console.log(this.state.newReply.coment);
