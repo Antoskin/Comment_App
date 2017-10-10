@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'MyFont';
+  src: local("MyFont"), url(./assets/font/Stag-Semibold.otf); }
+
+@font-face {
+  font-family: 'STAG';
+  src: local("STAG-BOOK"), url(./assets/font/STAG-BOOK.OTF); }
+
+@font-face {
+  font-family: 'medium';
+  src: local("STAG-MEDIUM"), url(./assets/font/STAG-MEDIUM.OTF); }
+
+body {
+  background: #f2f2f2;
+  margin: 0;
+  margin-bottom: 270px; }
+
+header {
+  background: url("./assets/img/header.png");
+  background-size: cover;
+  width: 100%;
+  height: 440px; }
+
+p {
+  font-family: 'STAG';
+  padding: 0 0 0 7px;
+  letter-spacing: 1px;
+  word-spacing: -1px;
+  font-size: 17px;
+  line-height: 28px;
+  margin: 25px 0; }
+
+#wrapper-content {
+  max-width: 870px;
+  border: 1px solid transparent;
+  margin: -88px auto 0;
+  padding: 0 80px;
+  background: #fff; }
+  #wrapper-content h3 {
+    font-size: 32px;
+    font-family: 'MyFont';
+    margin: 0 0 8px;
+    padding: 47px 7px 5px;
+    word-spacing: 2px;
+    border-bottom: 1px solid silver; }
+  #wrapper-content .post-date {
+    font-family: 'medium';
+    color: #c9c9c9;
+    padding: 0 6px;
+    letter-spacing: 0.1px;
+    word-spacing: 1px; }
+  #wrapper-content article {
+    margin: 0;
+    background: #fff; }
+    #wrapper-content article p {
+      margin: 0; }
+    #wrapper-content article img {
+      border: 5px solid #F2F2F2;
+      border-left: none;
+      float: left;
+      margin: 3px 24px 0 -80px;
+      width: 400px;
+      height: 267px; }
+
+#wrapper-content p:first-child {
+  margin-top: 12px; }

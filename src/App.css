@@ -1,0 +1,12 @@
+.separate {
+  border-bottom: 1px solid silver;
+  padding: 0 0 50px 0;
+  margin-bottom: 50px; }
+
+/*comments divs*/
+.commentWrapper img {
+  float: left; }
+
+.commentWrapper div p {
+  margin: 0;
+  font-size: 13px; }
