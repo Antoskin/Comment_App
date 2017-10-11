@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: 'MyFont';
   src: local("MyFont"),
@@ -33,16 +32,17 @@ p{
   word-spacing: -1px;
   font-size: 17px;
   line-height: 28px;
-  //text-align: justify;
-  // margin: 12px 0;
   margin: 25px 0;
 }
 #wrapper-content {
+  padding-bottom: 70px;
   max-width: 870px;
   border: 1px solid transparent;
   margin: -88px auto 0;
   padding: 0 80px;
   background: #fff;
+
+  .first-par {margin-top: 12px}
   h3{
     font-size: 32px;
     font-family: 'MyFont';

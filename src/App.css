@@ -1,20 +1,206 @@
-.separate {
+.textarea, #comApp .leaveComment textarea, #comApp .commentWrapper .theComment .addReplyArea textarea {
+  height: 90px;
+  resize: none;
+  border-color: #EBEDEE;
+  border-radius: 4px;
+  width: 100%;
+  margin-top: -13px;
+  font-size: 18px;
+  color: #B6B6B6;
+  line-height: 23px;
+  padding: 10px 20px;
+  box-sizing: border-box; }
+
+#comApp .bottomPost {
+  border-top: 1px solid silver;
   border-bottom: 1px solid silver;
-  padding: 0 0 50px 0;
-  margin-bottom: 50px; }
+  line-height: 57px; }
+  #comApp .bottomPost span:first-child {
+    margin-left: 9px; }
+    #comApp .bottomPost span:first-child i {
+      padding-right: 5px; }
+  #comApp .bottomPost span {
+    margin: 0 35px;
+    letter-spacing: 0.2px;
+    font-size: 17px;
+    word-spacing: -3px;
+    color: #B6B6B6; }
 
-/*comments divs*/
-.commentWrapper img {
-  float: left; }
+#comApp h5 {
+  font-family: 'medium';
+  font-size: 33px;
+  margin: 0 0 5px 5px;
+  line-height: 110px; }
 
-.commentWrapper div p {
+#comApp .leaveComment {
+  display: flex;
+  position: relative;
+  margin-bottom: 114px; }
+  #comApp .leaveComment .avaForleaveComment img {
+    width: 89px;
+    margin: 0px 25px 0 5px;
+    border: 2px solid #EBEDEE;
+    padding: 3px;
+    border-radius: 4px; }
+  #comApp .leaveComment textarea {
+    margin-top: 2px !important;
+    height: 97px; }
+  #comApp .leaveComment button {
+    position: absolute;
+    right: 0;
+    bottom: -55px;
+    width: 151px;
+    line-height: 45px;
+    border-radius: 4px;
+    border: none;
+    font-weight: bold;
+    background: #F1C40F;
+    color: #000;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.3s linear; }
+    #comApp .leaveComment button:hover {
+      opacity: 0.7; }
+  #comApp .leaveComment .separate {
+    position: absolute;
+    bottom: -10px;
+    bottom: -72px;
+    left: 0;
+    right: 0;
+    border-bottom: 2px solid #EBEDEE; }
+
+#comApp .commentWrapper {
+  margin-bottom: 15px; }
+  #comApp .commentWrapper img {
+    float: left; }
+  #comApp .commentWrapper p {
+    font-family: 'STAG';
+    padding: 0 0 0 7px;
+    letter-spacing: 1px;
+    word-spacing: -1px;
+    font-size: 17px;
+    margin: 25px 0; }
+  #comApp .commentWrapper .commentUserAva {
+    width: 89px;
+    margin: 0px 25px 0 5px;
+    border: 2px solid #EBEDEE;
+    padding: 3px;
+    border-radius: 4px; }
+  #comApp .commentWrapper .theComment {
+    overflow: hidden;
+    line-height: 28px; }
+    #comApp .commentWrapper .theComment p:first-child {
+      margin: 0; }
+    #comApp .commentWrapper .theComment p {
+      font-size: 17px;
+      margin-top: 10px;
+      margin-bottom: 0; }
+      #comApp .commentWrapper .theComment p span {
+        color: #B6B6B6; }
+    #comApp .commentWrapper .theComment button {
+      margin-top: 15px;
+      margin-bottom: 25px;
+      background: no-repeat;
+      border: none;
+      font-size: 15px;
+      cursor: pointer;
+      color: #B6B6B6; }
+    #comApp .commentWrapper .theComment .addReplyArea {
+      display: none;
+      flex-direction: column;
+      position: relative;
+      align-items: flex-end;
+      width: calc(100% - 10px);
+      float: right; }
+      #comApp .commentWrapper .theComment .addReplyArea .replyesTo {
+        position: absolute;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        top: 10px;
+        color: #B6B6B6; }
+        #comApp .commentWrapper .theComment .addReplyArea .replyesTo i {
+          transform: scale(-1, 1); }
+      #comApp .commentWrapper .theComment .addReplyArea span {
+        display: flex;
+        justify-content: flex-end; }
+        #comApp .commentWrapper .theComment .addReplyArea span .addReplyBut {
+          width: 151px;
+          line-height: 45px;
+          border-radius: 4px;
+          border: none;
+          font-weight: bold;
+          background: #F1C40F;
+          color: #000;
+          font-size: 17px;
+          cursor: pointer;
+          transition: 0.3s linear;
+          text-align: center; }
+          #comApp .commentWrapper .theComment .addReplyArea span .addReplyBut:hover {
+            opacity: 0.7; }
+
+.replysComponentBlock {
+  font-family: 'STAG';
   margin: 0;
-  font-size: 13px; }
-/**/new
-.replysComponentBlock{margin-bottom: 70px;}
-.replysComponentBlock> li {
+  list-style: none;
+  min-height: 13px;
+  padding: 0; }
+
+.replysComponentBlock > li {
+  list-style: none;
   height: 100px;
-}
-.addReplyArea{
-  display: none;
-}
+  margin-top: 5px; }
+  .replysComponentBlock > li img {
+    width: 66px;
+    padding: 3px;
+    border: 2px solid #EBEDEE;
+    border-radius: 4px;
+    margin-right: 21px; }
+  .replysComponentBlock > li ul {
+    list-style: none;
+    margin-left: 57px; }
+    .replysComponentBlock > li ul li {
+      margin-bottom: 10px; }
+      .replysComponentBlock > li ul li i, .replysComponentBlock > li ul li span, .replysComponentBlock > li ul li b:last-child {
+        color: #B6B6B6;
+        padding: 0 3px; }
+
+.loadMoreButton {
+  padding: 5px 19px;
+  font-size: 17px;
+  background: #fff;
+  border: 2px solid #F2F2F2;
+  color: #B6B6B6;
+  border-radius: 4px;
+  z-index: 0;
+  cursor: pointer;
+  margin: 20px auto 50px;
+  display: block; }
+
+@media (max-width: 850px) {
+  #wrapper-content {
+    padding: 0 20px; } }
+
+@media (max-width: 777px) {
+  #comApp .commentWrapper .theComment p, .replysComponentBlock {
+    font-size: 14px; }
+  .bottomPost {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  #comApp .commentWrapper .commentUserAva {
+    margin: 0px 7px 0 5px; } }
+
+@media (max-width: 550px) {
+  .commentUserAva, .replysComponentBlock img {
+    display: none; }
+  .replysComponentBlock > li ul {
+    margin-left: inherit; }
+  .avaForleaveComment {
+    display: none; }
+  #comApp .bottomPost span {
+    margin: 0; }
+  #wrapper-content article img {
+    height: 100%;
+    width: 100%;
+    margin: 0; } }

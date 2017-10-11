@@ -31,11 +31,14 @@ p {
   margin: 25px 0; }
 
 #wrapper-content {
+  padding-bottom: 70px;
   max-width: 870px;
   border: 1px solid transparent;
   margin: -88px auto 0;
   padding: 0 80px;
   background: #fff; }
+  #wrapper-content .first-par {
+    margin-top: 12px; }
   #wrapper-content h3 {
     font-size: 32px;
     font-family: 'MyFont';
