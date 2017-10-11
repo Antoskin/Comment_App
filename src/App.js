@@ -230,7 +230,7 @@ class Comments extends Component {
   }
 }
 
-class ReplyComments extends Comments {
+class ReplyComments extends Component {
   render() {
     let clas = {transform: 'scale(-1, 1)'};
     let { name, replyValue } = this.props;
@@ -255,7 +255,7 @@ class ReplyComments extends Comments {
 }
 
 
-class AddReplyComment extends Comments {
+class AddReplyComment extends Component {
   render() {
     let { index,name, addNewReplyButton, cancelReply, newReply } = this.props;
     return <div className="addReplyArea">
